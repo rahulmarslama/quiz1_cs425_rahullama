@@ -9,7 +9,7 @@ This repository contains the SEQuiz1 project.
 ## Run the application
 
 ```bash
-java -jar SEQuiz1.jar
+java -jar SEQuiz1-1.0-SNAPSHOT.jar
 ```
 
 ## Contents
