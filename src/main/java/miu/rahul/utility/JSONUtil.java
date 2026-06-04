@@ -4,7 +4,6 @@ import java.util.List;
 
 public class JSONUtil {
     public static String convertListToJson(List<? extends Object> objects) {
-        // Serialize list to JSON
         StringBuilder sb = new StringBuilder();
         sb.append("[");
         for (int i = 0; i < objects.size(); i++) {

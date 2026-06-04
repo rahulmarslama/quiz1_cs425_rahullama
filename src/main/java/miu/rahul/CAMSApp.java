@@ -14,10 +14,9 @@ public class CAMSApp {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, OKalu!\nWelcome to the CAMS CLI Application.");
         CAMSApp app = new CAMSApp();
-        app.printSilverTierAccounts();
-        app.printGoldTierAccounts();
-        app.printPlatinumTierAccounts();
+        app.printAllAccounts();
         app.printBankLiquidity(); 
+        app.printPlatinumTierAccounts();
 
     }
 

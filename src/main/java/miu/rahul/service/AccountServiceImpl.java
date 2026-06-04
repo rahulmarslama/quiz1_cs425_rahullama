@@ -11,9 +11,13 @@ public class AccountServiceImpl implements AccountService {
     public AccountServiceImpl() {
         this.accountRepository = AccountRepository.getInstance();
     }
-    @Override
+
+     @Override
     public List<Account> getAllAccounts() {
-        return accountRepository.findAll();
+        return accountRepository.findAll()
+                .stream()
+                .sorted(java.util.Comparator.comparing(Account::getBalance).reversed())
+                .toList();
     }
 
     @Override
